@@ -1,8 +1,6 @@
 # Natural Language Processing
 
-## Description:
-
-This workshop consists of three one-hour sessions:
+## Contents
 
 1. [Text processing in Python](python-strings/)
     + [strings and their properties](python-strings/properties.md)
@@ -20,6 +18,15 @@ This workshop consists of three one-hour sessions:
     + [statistical modeling of text](spacy/modelling.md)
     + [word vectors and similarity](spacy/vectors.md)
     + [processing pipelines](spacy/pipelines.md)
+
+## Google Colaboratory
+
+We will be using Google Colaboratory ("Colab") to run code in this workshop. Colab in a free Jupyter notebook environment
+that runs in the cloud and stores its notebooks on Google Drive. To use Colab you will need to sign in to a Google account. 
+(Note: Caltech Google accounts do not provide access to Colab. You will need to use a personal account.)
+
+An introduction to Google Colab is available here: https://research.google.com/colaboratory/
+
 
 ## Resources
 
