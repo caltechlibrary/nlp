@@ -5,7 +5,7 @@
 This workshop consists of three one-hour workshops:
 
 1. Text processing in Python
-    + strings and their properties
+    + [strings and their properties](python-strings/compare-search.md)
     + strings as iterables
     + lists
     + comparing and searching strings
