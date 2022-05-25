@@ -4,10 +4,10 @@
 
 ### [Strings and their properties](compare-search.md)
 
-### Strings as iterables
+### [Strings as iterables](iterables.md)
 
-### Lists
+### [Lists](lists.md)
 
-### Comparing and Searching Strings
+### [Comparing and Searching Strings](compare-search.md)
 
-### Regular Expressions
+### [Regular Expressions](regex.md)
