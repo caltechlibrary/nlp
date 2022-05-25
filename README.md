@@ -25,3 +25,6 @@ This workshop consists of three one-hour workshops:
 
 ## Resources
 
+
+[Natural Language Processing with Python](https://www.nltk.org/book/)
+[Advanced NLP with spaCy](https://course.spacy.io/en)
