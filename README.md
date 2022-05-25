@@ -2,7 +2,7 @@
 
 ## Description:
 
-This workshop consists of three one-hour workshops:
+This workshop consists of three one-hour sessions:
 
 1. [Text processing in Python](python-strings/)
     + [strings and their properties](python-strings/properties.md)
@@ -10,21 +10,18 @@ This workshop consists of three one-hour workshops:
     + [lists](python-strings/lists.md)
     + [comparing and searching strings](python-strings/compare-search.md)
     + [regular expressions](python-strings/regex.md)
-3. NLTK (Natural Language Toolkit)
-    + text preprocessing (spellchecking, stemming and lemmatization)
-    + word contexts and frequency distribution
-    + parts-of-speech tagging
-    + named entity recognition
-    + sentiment analysis
-5. spaCy
-    + statistical modeling of text
-    + word vectors and similarity
-    + processing pipelines
-
-
+3. [NLTK](nltk/) (Natural Language Toolkit)
+    + [text preprocessing](nltk/preprocessing.md) (spellchecking, stemming and lemmatization)
+    + [word contexts and frequency distribution](nltk/freq.md)
+    + [parts-of-speech tagging](nltk/pos.md)
+    + [named entity recognition](nltk/ner.md)
+    + [sentiment analysis](nltk/sa.md)
+5. [spaCy](spacy/)
+    + [statistical modeling of text](spacy/modelling.md)
+    + [word vectors and similarity](spacy/vectors.md)
+    + [processing pipelines](spacy/pipelines.md)
 
 ## Resources
-
 
 [Natural Language Processing with Python](https://www.nltk.org/book/)
 
