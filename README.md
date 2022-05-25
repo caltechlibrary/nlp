@@ -1,7 +1,5 @@
 # Natural Language Processing
 
----
-
 ## Description:
 
 This repository contains lesson plans for Caltech Library-facilitated R Carpentry
