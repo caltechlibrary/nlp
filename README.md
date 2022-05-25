@@ -25,7 +25,7 @@ We will be using Google Colaboratory ("Colab") to run code in this workshop. Col
 that runs in the cloud and stores its notebooks on Google Drive. To use Colab you will need to sign in to a Google account. 
 (Note: Caltech Google accounts do not provide access to Colab. You will need to use a personal account.)
 
-An introduction to Google Colab is available here: (https://research.google.com/colaboratory/)
+An introduction to Google Colab is available here: [https://research.google.com/colaboratory/]
 
     text = 'The rain in Spain falls mainly on the plain. This is a song. it is from My Fair Lady.'
     textdata = []
