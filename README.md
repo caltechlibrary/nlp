@@ -2,15 +2,11 @@
 
 ## Description:
 
-This repository contains lesson plans for Caltech Library-facilitated R Carpentry
-workshops. Workshops are organized in subfolders by date of workshop.
+This workshop consists of three one-hour workshops:
 
-Folders named with only the date are basic R Carpentry workshops. Advanced R
-topics have both date and topic in the folder name. Each subfolder contains all
-of the necessary files for that workshop.
-
-Please see files in the workshop folders, specifically the README,
-for more information on any particular workshop.
+1. Text processing in Python
+2. NLTK (Natural Language Toolkit)
+3. spaCy
 
 ---
 
