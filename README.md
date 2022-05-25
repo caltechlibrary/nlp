@@ -4,7 +4,7 @@
 
 This workshop consists of three one-hour workshops:
 
-1. [Text processing in Python](python/README.md)
+1. [Text processing in Python](python-strings/)
     + [strings and their properties](python-strings/compare-search.md)
     + [strings as iterables](python-strings/iterables.md)
     + [lists](python-strings/lists.md)
