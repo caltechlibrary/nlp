@@ -27,7 +27,12 @@ that runs in the cloud and stores its notebooks on Google Drive. To use Colab yo
 
 An introduction to Google Colab is available here: https://research.google.com/colaboratory/
 
-
+    text = 'The rain in Spain falls mainly on the plain. This is a song. it is from My Fair Lady.'
+    textdata = []
+    sentences = text.split('. ')
+    for sent in sentences:
+      textdata.append(sent.split())
+  
 ## Resources
 
 [Natural Language Processing with Python](https://www.nltk.org/book/)
