@@ -1,6 +1,4 @@
-<!-- page last updated 2022-01-26 -->
-
-# Caltech Library R Carpentry Workshops
+# Natural Language Processing
 
 ---
 
@@ -77,5 +75,3 @@ workshop.
 ## Resources
 
 The Caltech Library has [many books and ebooks on R](https://search.ebscohost.com/login.aspx?direct=true&AuthType=ip,sso&bquery=R+programming&cli0=FT1&clv0=Y&type=1&searchMode=And&site=eds-live&scope=site&custid=s8984125&groupid=main&profile=eds), including many on the [Safari platform](https://search.ebscohost.com/login.aspx?direct=true&AuthType=ip,sso&db=cat08655a&AN=clc.873aa4f7.3003.456e.afec.8f394b2ad7ce&site=eds-live&scope=site&custid=s8984125&groupid=main&profile=eds) (link requires Caltech credentials to view).
-
-#### Page last updated 2022-01-26
