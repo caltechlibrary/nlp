@@ -6,10 +6,10 @@ This workshop consists of three one-hour workshops:
 
 1. Text processing in Python
     + [strings and their properties](python-strings/compare-search.md)
-    + strings as iterables
-    + lists
-    + comparing and searching strings
-    + regular expressions
+    + [strings as iterables](python-strings/iterables.md)
+    + [lists](python-strings/lists.md)
+    + [comparing and searching strings](python-strings/compare-search.md)
+    + [regular expressions](python-strings/regex.md)
 3. NLTK (Natural Language Toolkit)
     + text preprocessing (spellchecking, stemming and lemmatization)
     + word contexts and frequency distribution
