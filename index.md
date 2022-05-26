@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Natural Language Processing
 
 A [Carpentries](https://carpentries.org)-inspired workshop
