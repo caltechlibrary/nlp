@@ -31,8 +31,3 @@ An introduction to Google Colab is available here: [https://research.google.com/
 
 Before the workshop please confirm that you have a Google Account with access to Colab.
 
-## Resources
-
-[Natural Language Processing with Python](https://www.nltk.org/book/)
-
-[Advanced NLP with spaCy](https://course.spacy.io/en)
