@@ -1,5 +1,3 @@
-A [Carpentries](https://carpentries.org)-inspired workshop
-
 ## Contents
 
 1. [Text processing in Python](python-strings/)
