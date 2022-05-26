@@ -1,4 +1,6 @@
- A [Carpentries](https://carpentries.org)-inspired workshop.
+A [Carpentries](https://carpentries.org)-inspired workshop.
+ 
+
 
 ## Contents
 
