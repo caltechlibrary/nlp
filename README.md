@@ -1,5 +1,7 @@
 # Natural Language Processing
 
+A [Carpentries](carpentries.org)-inspired workshop
+
 ## Contents
 
 1. [Text processing in Python](python-strings/)
