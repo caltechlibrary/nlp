@@ -22,4 +22,5 @@ A [Carpentries](https://carpentries.org)-inspired workshop.
     + [statistical modeling of text](spacy/modelling.md)
     + [word vectors and similarity](spacy/vectors.md)
     + [processing pipelines](spacy/pipelines.md)
+6. [Resources](resources.md)
 
