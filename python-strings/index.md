@@ -1,5 +1,3 @@
-# Natural Language Processing
-
 ## Text processing in Python
 
 ### [Strings and their properties](compare-search.md)
