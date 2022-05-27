@@ -1,4 +1,4 @@
-## 3. spaCy
+## 5. spaCy
 
 ### [Statistical modelling of text](modelling.md)
 
