@@ -1,4 +1,4 @@
-## Resources
+## 6. Resources
 
 [Python Documentation](https://docs.python.org/3/)
 
