@@ -6,6 +6,6 @@
 
 ### [Lists](lists.md)
 
-### [Comparing and Searching Strings](compare-search.md)
+### [Comparing and searching strings](compare-search.md)
 
-### [Regular Expressions](regex.md)
+### [Regular expressions](regex.md)
