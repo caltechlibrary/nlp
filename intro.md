@@ -1,4 +1,4 @@
-## Introduction
+## 1. Introduction
 
 This workshop provides a brief introduction to Natural Language Programming using Python.
 It covers text manipulation and processing using core Python functions, as well as the 
