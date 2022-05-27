@@ -1,4 +1,4 @@
-## Environment
+## 2. Environment
 
 The workshop assumes use of a Jupyter Notebook to run code examples. JupyterLab, Jupyter Notebook, and Google Colab are all 
 good options. JupyterLab and Jupyter Notebook can be downloaded as part of the [Anaconda data science suite](https://anaconda.com).
