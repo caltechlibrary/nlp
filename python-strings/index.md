@@ -1,4 +1,4 @@
-## Text processing in Python
+## 1. Text processing in Python
 
 ### [Strings and their properties](compare-search.md)
 
