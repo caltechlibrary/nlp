@@ -4,7 +4,6 @@
 
 Here is an example of a string:
 
-'''
-Peter Piper picked a peck of pickled peppers.
-'''
+    Peter Piper picked a peck of pickled peppers.
+
 
