@@ -13,3 +13,5 @@ that runs in the cloud and stores its notebooks on Google Drive. To use Colab yo
 An introduction to Google Colab is available here: [https://research.google.com/colaboratory/](https://research.google.com/colaboratory/)
 
 Before the workshop please confirm that you have a Google Account with access to Colab.
+
+[Introduction](intro.md) <previous:next> [Text Processing in Python](python-strings/)
