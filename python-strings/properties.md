@@ -18,3 +18,4 @@ The length property of a string is evaluated with the len() function:
 
 Note that the length includes the spaces.
 
+**Exercise:** Use the len() function to measure the length of the two strings above.
