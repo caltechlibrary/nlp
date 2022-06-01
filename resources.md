@@ -9,3 +9,5 @@
 [Natural Language Processing with Python](https://www.nltk.org/book/)
 
 [Advanced NLP with spaCy](https://course.spacy.io/en)
+
+##### \< [5. spaCy](spacy/)
