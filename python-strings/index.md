@@ -1,5 +1,7 @@
 ## 3. Text processing in Python
 
+Python is an object-oriented programming language. 
+
 [Strings and their properties](compare-search.md)
 
 [Strings as iterables](iterables.md)
