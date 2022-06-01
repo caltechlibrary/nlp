@@ -10,4 +10,10 @@ This is known as 'zero-based' indexing.
     s = 'Once upon a time...'
     print(s.index('t'))
     
+An object that consist of an ordered set of other objects is 'iterable', because you can iterate,
+or loop over those objects. A string consists of an ordered set of single-characters strings, so
+it is iterable. That is, 'Once upon a time...' consists of 'O', 'n', 'c', 'e', etc.
 
+Iterable objects can be looped over like this:
+
+    for
