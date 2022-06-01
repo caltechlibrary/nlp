@@ -5,3 +5,5 @@
 [Word vectors and similarity](vectors.md)
 
 [Processing pipelines](pipelines.md)
+
+\< [NLTK](../nltk/) \| [Resources](../resources.md) \>
