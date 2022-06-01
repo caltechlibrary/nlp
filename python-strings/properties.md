@@ -55,4 +55,4 @@ What does this do?
 
 ---
 
-
+Two particularly useful string methods are `.split()` and `.join()`.
