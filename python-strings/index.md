@@ -10,4 +10,4 @@
 
 3.5 [Regular expressions](regex.md)
 
-\< [2. Environment](\setup.md) : [3. Text Processing in Python](properties.md) \>
+\< [2. Environment](../setup.md) : [3. Text Processing in Python](properties.md) \>
