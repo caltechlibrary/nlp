@@ -1,3 +1,3 @@
-#### [Text Processing in Python](.)
+#### [3. Text Processing in Python](.)
 
-## Strings as Iterables
+## 3.2 Strings as Iterables
