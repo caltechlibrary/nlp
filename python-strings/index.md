@@ -9,3 +9,5 @@
 3.4 [Comparing and searching strings](compare-search.md)
 
 3.5 [Regular expressions](regex.md)
+
+\< 2. [Environment](..\setup.md) : 3. [Text Processing in Python](properties.md) \>
