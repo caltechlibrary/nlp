@@ -24,4 +24,18 @@ Note that the length includes the spaces.
 
 ---
 
-More stuff here.
+A 'function' is code that is independent of a specific object. A 'method' is code that is associated with an object. 
+Use a period and the method name to access it, like this:
+
+    'Peter Piper picked'.upper()
+
+---
+
+**Exercise:** 
+
+What does the `upper()` method do? Explore the following string methods:
+
+
+---
+
+
