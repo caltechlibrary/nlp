@@ -7,7 +7,7 @@ dataframes, and arrays. Objects have data (e.g. letters, numbers), attributes (e
 In this part of he workshop we will explore Python string objects. A string object is simply an ordered string of symbols
 (mostly letters), with properties or attributes (e.g. length), and methods (code).
 
-[Strings and their properties](compare-search.md)
+[Strings and their properties](properties.md)
 
 [Strings as iterables](iterables.md)
 
