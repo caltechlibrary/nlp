@@ -31,7 +31,27 @@ Use a period and the method name to access it, like this:
 ---
 **Exercise:** 
 
-What does the `upper()` method do? Explore the following string methods:
+Assign a string to a variable
+
+     s = 'Peter Piper picked a peck of pickled peppers.'
+
+What does the `upper()` method do? 
+
+     s.upper()
+
+Explore the following string methods:
+
+     s.lower()
+     
+     s.title()
+     
+     s.count('p')
+     
+How often does 'p' appear in s? 'pe'?
+
+What does this do?
+
+    s.lower().count('pe')
 
 ---
 
