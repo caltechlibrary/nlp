@@ -1,13 +1,13 @@
 ## 3. Text processing in Python
 
-3.1 [Strings and their properties](compare-search.md)
+[Strings and their properties](compare-search.md)
 
-3.2 [Strings as iterables](iterables.md)
+[Strings as iterables](iterables.md)
 
-3.3 [Lists](lists.md)
+[Lists](lists.md)
 
-3.4 [Comparing and searching strings](compare-search.md)
+[Comparing and searching strings](compare-search.md)
 
-3.5 [Regular expressions](regex.md)
+[Regular expressions](regex.md)
 
-\< [2. Environment](../setup.md) | [3. NLTK](../nltk/) \>
+###### \< [2. Environment](../setup.md) | [3. NLTK](../nltk/) \>
