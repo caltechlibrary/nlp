@@ -14,6 +14,19 @@ Lists do not have to be homogeneous:
 
 The output from `print(list4)` should look like this:
 
-`[[1, 'Jack', 2, 'and the Beanstalk'], ['Once', 'upon', 'a', 'time', '...'], [1, 2, 3, 1024]]`
+    [[1, 'Jack', 2, 'and the Beanstalk'], ['Once', 'upon', 'a', 'time', '...'], [1, 2, 3, 1024]]
 
 Note that strings are enclosed in quotation marks, whereas variables (e.g. list3, list4) are not.
+
+> **Exercise:** What output would you expect from this?
+
+    for obj in list4:
+      print(obj)
+
+> **Exercise:** What output would you expect from this?
+
+    for obj in list4:
+      for subobj in obj:
+        print(subobj)
+        
+> Try it out.
