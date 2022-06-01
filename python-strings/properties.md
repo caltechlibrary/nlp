@@ -20,8 +20,6 @@ Note that the length includes the spaces.
 
 ---
 **Exercise:** 
-
 Use the len() function to measure the length of the two strings above.
-
 ---
 
