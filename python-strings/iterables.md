@@ -20,7 +20,7 @@ Iterable objects can be looped over like this:
     for character in opening:
       print(character)
 
-> **Exercise:** Can you explain the output for the following:
+> **Exercise:** Explain the output for the following:
 
     for character in opening:
       print(opening.index(character))
