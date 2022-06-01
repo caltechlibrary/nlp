@@ -9,3 +9,5 @@
 [Named entity recognition](ner.md)
 
 [Sentiment analysis](sa.md)
+
+\< [Text Processing in Python](../python-strings/) \| [spaCy](../spaCy/)
