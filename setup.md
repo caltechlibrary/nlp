@@ -14,4 +14,4 @@ An introduction to Google Colab is available here: [https://research.google.com/
 
 Before the workshop please confirm that you have a Google Account with access to Colab.
 
-\< [Introduction](intro.md) : [Text Processing in Python](python-strings/) \>
+\< [Introduction](intro.md) | [Text Processing in Python](python-strings/) \>
