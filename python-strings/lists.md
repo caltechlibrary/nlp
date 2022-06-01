@@ -1,3 +1,3 @@
-#### [Text Processing in Python](.)
+#### [3. Text Processing in Python](.)
 
-## Lists
+## 3.3 Lists
