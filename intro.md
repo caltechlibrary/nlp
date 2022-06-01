@@ -11,4 +11,4 @@ frequency distribution, parts of speech, named entities, and sentiment analysis.
 During COVID the workshop is taught online in three one-hour sessions. Ideally, the workshop
 would be taught in person, in three two-hour sessions, with time for exercises and discussion.
 
-Next: Environment: Google Colaboratory
+Next> [Environment: Google Colaboratory](setup.md))
