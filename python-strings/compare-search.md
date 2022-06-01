@@ -1,3 +1,5 @@
-# Text Processing in Python
+### Text Processing in Python
 
-## Comparing and Searching Strings
+## 3.1 Comparing and Searching Strings
+
+
