@@ -6,4 +6,6 @@
 
 [Processing pipelines](pipelines.md)
 
+---
+
 ##### \< [4. NLTK](../nltk/) \| [6. Resources](../resources.md) \>
