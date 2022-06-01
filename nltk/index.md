@@ -10,4 +10,4 @@
 
 [Sentiment analysis](sa.md)
 
-###### \< [Text Processing in Python](../python-strings/) \| [spaCy](../spacy/) \>
+###### \< [3. Text Processing in Python](../python-strings/) \| [5. spaCy](../spacy/) \>
