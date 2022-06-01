@@ -12,4 +12,4 @@ Python is an object-oriented programming language.
 
 [Regular expressions](regex.md)
 
-###### \< [2. Environment](../setup.md) | [3. NLTK](../nltk/) \>
+##### \< [2. Environment](../setup.md) | [3. NLTK](../nltk/) \>
