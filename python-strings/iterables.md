@@ -18,10 +18,10 @@ the characters are 0, 1, 2, 3, 4, etc.
 Iterable objects can be looped over like this:
 
     for character in opening:
-        print(character)
+      print(character)
 
 > **Exercise:** Can you explain the output for the following:
 
     for character in opening:
-        print(opening.index(character))
+      print(opening.index(character))
 
