@@ -26,10 +26,7 @@ Use a period and the method name to access it, like this:
 
     'Peter Piper picked'.upper()
 
----
-**Exercise:** 
-
-Assign a string to a variable
+> **Exercise:** Assign a string to a variable
 
      s = 'Peter Piper picked a peck of pickled peppers.'
 
