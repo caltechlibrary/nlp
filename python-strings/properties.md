@@ -16,7 +16,8 @@ The length property of a string is evaluated with the `len()` function:
 
     len('  Peter Piper picked a  peck of pickled peppers. ')
 
-Note that the length includes the spaces.
+Note that the length includes the spaces. The `len()` function can be used to evaluate the length, or size, or
+many different Python objects; not just text.
 
 ---
 **Exercise:** Use the `len()` function to measure the length of the two strings above.
@@ -47,12 +48,10 @@ Explore the following string methods:
      
      s.count('p')
      
-How often does 'p' appear in s? 'pe'?
+How often does 'p' appear in s? Count the occurences of 'pe'?
 
 What does this do?
 
     s.lower().count('pe')
 
 ---
-
-Two particularly useful string methods are `.split()` and `.join()`.
