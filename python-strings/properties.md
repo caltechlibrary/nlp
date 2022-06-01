@@ -30,11 +30,11 @@ Use a period and the method name to access it, like this:
 
      s = 'Peter Piper picked a peck of pickled peppers.'
 
-What does the `upper()` method do? 
+> What does the `upper()` method do? 
 
      s.upper()
 
-Explore the following string methods:
+> Explore the following string methods:
 
      s.lower()
      
@@ -42,10 +42,9 @@ Explore the following string methods:
      
      s.count('p')
      
-How often does 'p' appear in s? Count the occurences of 'pe'?
+> How often does 'p' appear in s? Count the occurences of 'pe'?
 
-What does this do?
+> What does this do?
 
     s.lower().count('pe')
 
----
