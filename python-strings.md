@@ -13,7 +13,7 @@ In this part of he workshop we will explore Python string objects. A string obje
 - [Comparing and searching strings](#compare-search)
 - [Regular expressions](#regex)
 
-### <a name='properties'/>Strings and their properties
+### <a name='properties'/>3.1 Strings and their properties
 
 Here is an example of a string:
 
@@ -170,7 +170,7 @@ returns -1 if not found.
 
 !=
 
-### <a name='regex'/>Regular Expressions in Python
+### <a name='regex'/>3.5 Regular Expressions in Python
 
 
 ---
