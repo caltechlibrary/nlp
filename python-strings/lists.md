@@ -69,5 +69,3 @@ will return:
 
     syllables = ['an', 'ti', 'di', 'ses', 'ta', 'blish', 'men', 'ta', 'ri', 'an', 'ism']
     ''.join(syllables)
-    
-    '
