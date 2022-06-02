@@ -1,6 +1,6 @@
 A [Carpentries](https://carpentries.org)-inspired workshop.
 
-<img src='caltechlibrary.png' alt='Caltech Library' width='75'/>
+<img src='caltechlibrary-logo.png' alt='Caltech Library' width='150'/>
 
 This workshop provides a brief introduction to Natural Language Programming using Python.
 It covers text manipulation and processing using core Python functions, as well as the 
