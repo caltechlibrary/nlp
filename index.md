@@ -8,24 +8,24 @@ A [Carpentries](https://carpentries.org)-inspired workshop.
 
 2. [Environment: Google Colaboratory](setup.md)
 
-3. [Text processing in Python](python-strings/)
-    + [strings and their properties](python-strings/properties.md)
-    + [strings as iterables](python-strings/iterables.md)
-    + [lists](python-strings/lists.md)
-    + [comparing and searching strings](python-strings/compare-search.md)
-    + [regular expressions](python-strings/regex.md)
+3. [Text processing in Python](python-strings.md)
+    + strings and their properties
+    + strings as iterables
+    + lists
+    + comparing and searching strings
+    + regular expressions
 
-4. [NLTK](nltk/) (Natural Language Toolkit)
-    + [text preprocessing](nltk/preprocessing.md) (spellchecking, stemming and lemmatization)
-    + [word contexts and frequency distribution](nltk/freq.md)
-    + [parts-of-speech tagging](nltk/pos.md)
-    + [named entity recognition](nltk/ner.md)
-    + [sentiment analysis](nltk/sa.md)
+4. [NLTK](nltk.md) (Natural Language Toolkit)
+    + text preprocessing (spellchecking, stemming and lemmatization)
+    + word contexts and frequency distribution
+    + parts-of-speech tagging
+    + named entity recognition
+    + sentiment analysis
 
-5. [spaCy](spacy/)
-    + [statistical modeling of text](spacy/modelling.md)
-    + [word vectors and similarity](spacy/vectors.md)
-    + [processing pipelines](spacy/pipelines.md)
+5. [spaCy](spacy.md)
+    + statistical modeling of text
+    + word vectors and similarity
+    + processing pipelines
 
 6. [Resources](resources.md)
 
