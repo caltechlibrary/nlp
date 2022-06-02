@@ -19,6 +19,10 @@ Iterable objects can be looped over like this:
 
     for character in opening:
       print(character)
+      
+Note that the variable 'character' is totally arbitrary. It is good to use a variable name that aids
+understanding, but it can actually be anything at all. Change 'character' to 'banana' and the code will
+work just as well.
 
 > **Exercise:** Explain the output for the following:
 
