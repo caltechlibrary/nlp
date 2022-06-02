@@ -1,4 +1,4 @@
-<img src='caltechlibrary.png' alt='Caltech Library' width='200'/>
+<img src='caltechlibrary.png' alt='Caltech Library' width='100'/>
 
 A [Carpentries](https://carpentries.org)-inspired workshop.
  
