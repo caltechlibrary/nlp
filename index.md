@@ -33,7 +33,7 @@ Before the workshop please confirm that you have a Google Account with access to
 
 ## Contents
 
-1: [Text processing in Python](python-strings.md)
+1. [Text processing in Python](python-strings.md)
     + 1.1 Strings and their properties
     + 1.2 Strings as iterables
     + 1.3 Lists
