@@ -53,4 +53,3 @@ Before the workshop please confirm that you have a Google Account with access to
     + 3.3 Processing pipelines
 
 4. [Selected Resources](resources.md)
-
