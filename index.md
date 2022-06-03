@@ -1,6 +1,8 @@
-<img src='caltechlibrary-logo.png' alt='Caltech Library' width='100'/>
+<img src='caltechlibrary-logo.png' alt='Caltech Library' width='150'/>
 
 A [Carpentries](https://carpentries.org)-inspired workshop.
+
+## Introduction
 
 This workshop provides a brief introduction to Natural Language Programming using Python.
 It covers text manipulation and processing using core Python functions, as well as the 
@@ -12,6 +14,8 @@ frequency distribution, parts of speech, named entities, and sentiment analysis.
 
 During COVID the workshop is taught online in three one-hour sessions. Ideally, the workshop
 would be taught in person, in three two-hour sessions, with time for exercises and discussion.
+
+## Setup
 
 ## Contents
 
