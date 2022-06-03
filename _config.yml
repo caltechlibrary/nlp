@@ -1,3 +1,5 @@
 title: Natural Language Processing
 description: A very brief introduction to NLP using Python, NLTK, and spaCy.
 logo: caltechlibrary.png
+
+theme: jekyll-theme-slate
