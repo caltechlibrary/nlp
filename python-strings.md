@@ -1,4 +1,4 @@
-## 3. Text processing in Python
+## 1. Text processing in Python
 
 Python is an object-oriented programming language. Examples of objects are strings, integers, real numbers,
 dataframes, and arrays. Objects have data (e.g. letters, numbers), attributes (e.g. length, dimensions), and methods 
@@ -7,13 +7,13 @@ dataframes, and arrays. Objects have data (e.g. letters, numbers), attributes (e
 In this part of he workshop we will explore Python string objects. A string object is simply an ordered string of symbols
 (mostly letters), with properties or attributes (e.g. length), and methods (code).
 
-- [Strings and their properties](#properties)
-- [Strings as iterables](#iterables)
-- [Lists](#lists)
-- [Comparing and searching strings](#compare-search)
-- [Regular expressions](#regex)
+- 1.1 [Strings and their properties](#properties)
+- 1.2 [Strings as iterables](#iterables)
+- 1.3 [Lists](#lists)
+- 1.4 [Comparing and searching strings](#compare-search)
+- 1.5 [Regular expressions](#regex)
 
-### <a name='properties'/>3.1 Strings and their properties
+### <a name='properties'/>1.1 Strings and their properties
 
 Here is an example of a string:
 
@@ -61,7 +61,7 @@ Use a period and the method name to access it, like this:
 
     s.lower().count('pe')
 
-### <a name='iterables'/>3.2 Strings as Iterables
+### <a name='iterables'/>1.2 Strings as Iterables
 
 A string is an ordered set of symbols: letters, numbers, and other characters.
 The position of each symbol can be ascertained with with .index() method. The following will
@@ -90,7 +90,7 @@ work just as well.
     for character in opening:
       print(opening.index(character))
 
-### <a name='lists'/>3.3 Lists
+### <a name='lists'/>1.3 Lists
 
 A Python list is another iterable object. Like a string it is an ordered set of objects:
 
@@ -160,7 +160,7 @@ will return:
     syllables = ['an', 'ti', 'di', 'ses', 'ta', 'blish', 'men', 'ta', 'ri', 'an', 'ism']
     ''.join(syllables)
 
-### <a name='compare-search'/>3.4 Comparing and Searching Strings
+### <a name='compare-search'/>1.4 Comparing and Searching Strings
 
 .find(value, begin, end)
 
@@ -170,7 +170,7 @@ returns -1 if not found.
 
 !=
 
-### <a name='regex'/>3.5 Regular Expressions in Python
+### <a name='regex'/>1.5 Regular Expressions in Python
 
 
 ---
