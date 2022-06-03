@@ -1,6 +1,6 @@
-[<img src='caltechlibrary-logo.png' alt='Caltech Library' width='150'/>](https://www.library.caltech.edu/)
-
 A [Carpentries](https://carpentries.org)-inspired workshop.
+
+[<img src='caltechlibrary-logo.png' alt='Caltech Library' width='150'/>](https://www.library.caltech.edu/)
 
 ## Introduction
 
