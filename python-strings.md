@@ -175,4 +175,4 @@ returns -1 if not found.
 
 ---
 
-##### \< [2. Environment](setup.md) | [4. NLTK](nltk/) \>
+##### \< [Home](index.md) | [2. NLTK](nltk.md) \>
