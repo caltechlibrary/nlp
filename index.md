@@ -1,7 +1,7 @@
 | A workshop inspired by | Sponsored by |
 | [<img src='TheCarpentries.svg' alt='Caltech Library' width='150'/>](https://carpentries.org) | [<img src='caltechlibrary-logo.png' alt='Caltech Library' width='150'/>](https://www.library.caltech.edu/) |
 
-June 13, 14 and 16, 2022
+#### June 13, 14 and 16, 2022
 
 ## Introduction
 
