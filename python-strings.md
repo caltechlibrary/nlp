@@ -212,7 +212,7 @@ Strings can be compared using these operators
         issorted = True
     print(text_list)
     
-<Bubble-sort-example-300px.gif>
+<img src='Bubble-sort-example-300px.gif'>
     
 
 ### <a name='regex'/>1.5 Regular Expressions in Python
