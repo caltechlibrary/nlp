@@ -178,17 +178,20 @@ If the string is not found, `-1` is returned.
 
 > **Exercise:** Here is code to count the number of words that contain the letter `o`. Why does it give an incorrect answer? Can you correct the code?
 
-    text = 'the quick brown fox jumped over the lazy dog'
+    text = 'The quick brown fox jumped over the lazy dog'
     text_list = text.split()
     numb = 0
     for word in text_list:
-      if word.find('o'):
+      if word.find('o') > 0:
         numb += 1
     print('number of words:', numb)
 
-==
+Strings can be compared using these operators
 
-!=
+`==` is equal to
+`!=` is NOT equal to
+`>` (`>=`) is GREATER THAN (or equal to), in unicode order
+`<` (`<=`) is LESS THAN (or equal to), in unicode order
 
 ### <a name='regex'/>1.5 Regular Expressions in Python
 
