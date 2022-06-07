@@ -197,7 +197,20 @@ Strings can be compared using these operators
 
 > **Exercise:** Write code to sort the words in 'The quick brown fox jumped over the lazy dog.'
 
-    text_list = 'The quick brown fox jumped over the lazy dog'.split()
+    text_list = 'The quick brown Fox jumped over the lazy Dog'.split()
+    text_len = len(text_list)
+    issorted = False
+    while issorted is False:
+      swap = False
+      for pos in range(text_len-1):
+        if text_list[pos] > text_list[pos+1]:
+          swap = True
+          text_list_tmp = text_list[pos]
+          text_list[pos] = text_list[pos+1]
+          text_list[pos+1] = text_list_tmp
+      if not swap:
+        issorted = True
+    print(text_list)
     
 <Bubble-sort-example-300px.gif>
     
