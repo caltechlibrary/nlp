@@ -1,4 +1,4 @@
-A [Carpentries](https://carpentries.org)-inspired workshop.
+A [<img src='TheCarpentries.svg' alt='Caltech Library' width='150'/> Carpentries](https://carpentries.org)-inspired workshop.
 
 Sponsored by [<img src='caltechlibrary-logo.png' alt='Caltech Library' width='150'/>](https://www.library.caltech.edu/)
 
