@@ -162,9 +162,29 @@ will return:
 
 ### <a name='compare-search'/>1.4 Comparing and Searching Strings
 
-.find(value, begin, end)
+The `.find()` method is used to find a string of characters in a string. It has the following syntax:
 
-returns -1 if not found.
+    'a string'.find(value, begin, end)
+
+where 'value' is the string to find, and begin and end are the beginning and ending positions of the search. For example:
+
+    'the quick brown fox jumped over the lazy dog'.find('the', 10)
+
+will return
+
+    32
+
+If the string is not found, `-1` is returned.
+
+> **Exercise:** Here is code to count the number of words that contain the letter `o`. Why does it give an incorrect answer? Can you correct the code?
+
+    text = 'the quick brown fox jumped over the lazy dog'
+    text_list = text.split()
+    numb = 0
+    for word in text_list:
+      if word.find('o'):
+        numb += 1
+    print('number of words:', numb)
 
 ==
 
