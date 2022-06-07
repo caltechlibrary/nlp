@@ -1,12 +1,10 @@
-## 5. spaCy
+## 3. spaCy
 
-[Statistical modelling of text](modelling.md)
-
-[Word vectors and similarity](vectors.md)
-
-[Processing pipelines](pipelines.md)
+- 3.1 [Statistical modelling of text](#modelling)
+- 3.2 [Word vectors and similarity](#vectors)
+- 3.3 [Processing pipelines](#pipelines)
 
 ---
 
-##### \< [4. NLTK](../nltk/) \| [6. Resources](../resources.md) \>
+##### \< [2. NLTK](nltk.md) \| [4. Resources](resources.md) \>
 
