@@ -188,10 +188,10 @@ If the string is not found, `-1` is returned.
 
 Strings can be compared using these operators
 
-`==` is equal to
-`!=` is NOT equal to
-`>` (`>=`) is GREATER THAN (or equal to), in unicode order
-`<` (`<=`) is LESS THAN (or equal to), in unicode order
+`==` is equal to  
+`!=` is NOT equal to  
+`>` (`>=`) is GREATER THAN (or equal to), in unicode order  
+`<` (`<=`) is LESS THAN (or equal to), in unicode order  
 
 ### <a name='regex'/>1.5 Regular Expressions in Python
 
