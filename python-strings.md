@@ -195,6 +195,11 @@ Strings can be compared using these operators
 | `<` | is less than, in unicode order |
 | `<=` | is less than or equal to, in unicode order |
 
+> **Exercise:** Write code to sort the words in 'The quick brown fox jumped over the lazy dog.'
+
+    text_list = 'The quick brown fox jumped over the lazy dog'.split()
+    
+
 ### <a name='regex'/>1.5 Regular Expressions in Python
 
 
