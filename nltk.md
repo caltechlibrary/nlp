@@ -8,5 +8,5 @@
 
 ---
 
-##### \< [3. Text Processing in Python](../python-strings/) \| [5. spaCy](../spacy/) \>
+##### \< [1. Text Processing in Python](python-strings.md) \| [3. spaCy](spacy.md) \>
 
