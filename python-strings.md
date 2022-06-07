@@ -199,6 +199,8 @@ Strings can be compared using these operators
 
     text_list = 'The quick brown fox jumped over the lazy dog'.split()
     
+[](Bubble-sort-example-300px.gif)
+    
 
 ### <a name='regex'/>1.5 Regular Expressions in Python
 
