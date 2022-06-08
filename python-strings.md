@@ -204,19 +204,12 @@ Strings can be compared using these operators
 > Correct the code to make it work as you would expect.
 
     text = 'The quick brown Fox jumped over the lazy Dog'.split()
-    ln = len(text)-1
-    issorted = False
-    while issorted is False:
-      swap = False
-      for pos in range(ln):
+    ln = test = len(text)-1
+    for cycle in range(ln):
+      for pos in range(test):
         if text[pos] > text[pos+1]:
-          swap = True
-          text_tmp = text[pos]
-          text[pos] = text[pos+1]
-          text[pos+1] = text_tmp
-      if not swap:
-        issorted = True
-      ln -= 1
+          text[pos], text[pos+1] = text[pos+1], text[pos]
+      test -= 1
     print(text)
     
 
