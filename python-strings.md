@@ -198,8 +198,11 @@ Strings can be compared using these operators
 > **Exercise:** Study this code to sort the words in 'The quick brown fox jumped over the lazy dog.' It is an exampe of the bubble
 > sort algorithm, demonstrated here:
 
+Bubble sort algorithm: 
+[Wikipedia](https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.gif)
 [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
-[<img src='Bubble-sort-example-300px.gif'>](https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.gif)  
+
+<img src='Bubble-sort-example-300px.gif'>  
 
     text = 'The quick brown Fox jumped over the lazy Dog'.split()
     ln = len(text)-1
