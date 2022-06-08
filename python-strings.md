@@ -201,6 +201,8 @@ Strings can be compared using these operators
 | [Wikipedia](https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.gif) [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
 <img src='Bubble-sort-example-300px.gif'> |  
 
+> Correct the code to make it work as you would expect.
+
     text = 'The quick brown Fox jumped over the lazy Dog'.split()
     ln = len(text)-1
     issorted = False
