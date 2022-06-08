@@ -195,28 +195,29 @@ Strings can be compared using these operators
 | `<` | is less than, in unicode order |
 | `<=` | is less than or equal to, in unicode order |
 
-> **Exercise:** Write code to sort the words in 'The quick brown fox jumped over the lazy dog.'
+> **Exercise:** Study this code to sort the words in 'The quick brown fox jumped over the lazy dog.' It is an exampe of the bubble
+> sort algorithm, demonstrated here:
 
-    text_list = 'The quick brown Fox jumped over the lazy Dog'.split()
-    text_len = len(text_list)
+[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+[<img src='Bubble-sort-example-300px.gif'>](https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.gif)  
+
+    text = 'The quick brown Fox jumped over the lazy Dog'.split()
+    ln = len(text)-1
     issorted = False
-    range_cnt = text_len - 1
     while issorted is False:
       swap = False
-      range_cnt = range_cnt - 1
-      for pos in range():
-        if text_list[pos] > text_list[pos + 1]:
+      for pos in range(ln):
+        if text[pos] > text[pos+1]:
           swap = True
-          text_list_tmp = text_list[pos]
-          text_list[pos] = text_list[pos + 1]
-          text_list[pos+1] = text_list_tmp
+          text_tmp = text[pos]
+          text[pos] = text[pos+1]
+          text[pos+1] = text_tmp
       if not swap:
         issorted = True
-    print(text_list)
+      ln -= 1
+    print(text)
     
-<img src='Bubble-sort-example-300px.gif'>  
-https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.gif  
-[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
+
     
 
 ### <a name='regex'/>1.5 Regular Expressions in Python
