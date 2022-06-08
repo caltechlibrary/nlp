@@ -195,7 +195,7 @@ Strings can be compared using these operators
 | `<` | is less than, in unicode order |
 | `<=` | is less than or equal to, in unicode order |
 
-> **Exercise:** Study this code to sort the words in 'The quick brown fox jumped over the lazy dog.' It is an exampe of the bubble
+> **Exercise:** Study this code to sort the words in 'The quick brown fox jumped over the lazy dog.' It is an example of the bubble
 > sort algorithm, demonstrated here:
  
 | [Wikipedia](https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.gif) [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
@@ -204,12 +204,12 @@ Strings can be compared using these operators
 > Correct the code to make it work as you would expect.
 
     text = 'The quick brown Fox jumped over the lazy Dog'.split()
-    ln = test = len(text)-1
-    for cycle in range(ln):
-      for pos in range(test):
+    len1 = len2 = len(text)-1
+    for looper in range(len1):
+      for pos in range(len2):
         if text[pos] > text[pos+1]:
           text[pos], text[pos+1] = text[pos+1], text[pos]
-      test -= 1
+      len2 -= 1
     print(text)
     
 
