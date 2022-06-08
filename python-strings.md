@@ -200,19 +200,23 @@ Strings can be compared using these operators
     text_list = 'The quick brown Fox jumped over the lazy Dog'.split()
     text_len = len(text_list)
     issorted = False
+    range_cnt = text_len - 1
     while issorted is False:
       swap = False
-      for pos in range(text_len-1):
-        if text_list[pos] > text_list[pos+1]:
+      range_cnt = range_cnt - 1
+      for pos in range():
+        if text_list[pos] > text_list[pos + 1]:
           swap = True
           text_list_tmp = text_list[pos]
-          text_list[pos] = text_list[pos+1]
+          text_list[pos] = text_list[pos + 1]
           text_list[pos+1] = text_list_tmp
       if not swap:
         issorted = True
     print(text_list)
     
-<img src='Bubble-sort-example-300px.gif'>
+<img src='Bubble-sort-example-300px.gif'>  
+https://en.wikipedia.org/wiki/Bubble_sort#/media/File:Bubble-sort-example-300px.gif  
+[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)
     
 
 ### <a name='regex'/>1.5 Regular Expressions in Python
