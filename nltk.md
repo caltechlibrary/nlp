@@ -55,20 +55,20 @@ and the `read()` method to read the contents of the URL to a file:
 ```python
 url = 'https://www.gutenberg.org/cache/epub/2009/pg2009.txt'
 req = request.urlopen(url)
-origin_txt = request.urlopen(url).read()
+origin_byt = request.urlopen(url).read()
 ```
 
 These code above can actually be collapsed into one:
 
 ```python
 from urllib import request
-origin_txt = request.urlopen('https://www.gutenberg.org/cache/epub/2009/pg2009.txt').read()
+origin_byt = request.urlopen('https://www.gutenberg.org/cache/epub/2009/pg2009.txt').read()
 ```
 
 Print our the first 50 characters of origin_text:
 
 ```python
-print(origin_txt[:100])
+print(origin_byt[:100])
 ```
 
 You should see the following:
@@ -97,7 +97,32 @@ Other codes you will encounter:
 | `\t` | tab |
 | `\b` | backspace |
 
-Use the `decode()` method to turn byte object into a string object, and the `strip()` method to remove the 
+Use the `decode('utf-8-sig')` method to turn byte object into a string object without the leading 'signature' codes, and verify that it is a string: 
+
+```python
+origin_txt = origin_byt.decode('utf-8-sig')
+print('type of origin_byt:', type(origin_byt))
+print('type of origin_txt:, type(origin_txt))
+print('beginning of origin_txt:', origin_txt[:100])
+print('length of origin_txt':, len(origin_txt), 'characters')
+```
+By examining the beginning and end of the text on the Project Gutenberg website we know that the text begins after
+
+`*** START OF THE PROJECT GUTENBERG EBOOK ON THE ORIGIN OF SPECIES ***`
+
+and ends with:
+
+`*** END OF THE PROJECT GUTENBERG EBOOK ON THE ORIGIN OF SPECIES ***`
+
+so we can trim the text as follows:
+
+```python
+s1 = '*** START OF THE PROJECT GUTENBERG EBOOK ON THE ORIGIN OF SPECIES ***'
+s2 = '*** END OF THE PROJECT GUTENBERG EBOOK ON THE ORIGIN OF SPECIES ***'
+startpos = origin_txt.find(s1) + len(s1)
+endpos = origin_txt.rfind(s2)
+origin_txt = origin_txt[startpos:endpos]
+```
 
 ### <a name='preprocessing'/>2.2 Text preprocessing
 
