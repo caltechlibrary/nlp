@@ -82,7 +82,13 @@ backslash: `\`
 
 Here's what the extra codes mean:
 
-
+| code | meaning |
+| --- | --- |
+| leading b | this is a `byte` object, and not a `string` object |
+| \xef\xbb\xdf | the character encoding is UTF-8 |
+| \r | carriage return |
+| \n | new line |
+| \t | tab (not present here) |
 
 ### <a name='preprocessing'/>2.2 Text preprocessing
 
