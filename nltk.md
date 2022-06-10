@@ -39,7 +39,7 @@ Note the attributes 'w', 'a' and 'r' for 'write' (i.e. overwrite, create), 'appe
 Also, the file is automatically closed at the end of each `open()` code block.
 
 For reading text from the web we will use the `request` method from the `urllib` library to download the text of 'Origin of the Species'
-from [Project Gutenberg](https://www.gutenberg.org/). We will use this version: [The Origin of Species by Means of Natural Selection by Charles Darwin (6th. ed.)](https://www.gutenberg.org/ebooks/2009)
+from [Project Gutenberg](https://www.gutenberg.org/). We will use this version: [The Origin of Species by Means of Natural Selection by Charles Darwin (6th. ed.)](https://www.gutenberg.org/ebooks/2009), the [plain text UTF-8 version](https://www.gutenberg.org/cache/epub/2009/pg2009.txt).
 
 ### <a name='preprocessing'/>2. Text preprocessing
 
