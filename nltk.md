@@ -53,9 +53,16 @@ Let's assign the URL to a variable, use the `request()` to create a request obje
 and the `read()` method to read the contents of the URL to a file:
 
 ```python
-url = "https://www.gutenberg.org/cache/epub/2009/pg2009.txt"
+url = 'https://www.gutenberg.org/cache/epub/2009/pg2009.txt'
 req = request.urlopen(url)
-origin_txt = req.read()
+origin_txt = request.urlopen(url).read()
+```
+
+These code above can actually be collapsed into one:
+
+```python
+from urllib import request
+origin_txt = request.urlopen('https://www.gutenberg.org/cache/epub/2009/pg2009.txt').read()
 ```
 
 Print our the first 50 characters of origin_text:
@@ -63,8 +70,19 @@ Print our the first 50 characters of origin_text:
 ```python
 print(origin_txt[:100])
 ```
-There are a few escape sequences here that need explaining. Escape characters and sequences are denoted by the
-backslash: `\\`
+
+You should see the following:
+
+```
+b'\xef\xbb\xbfThe Project Gutenberg eBook of On the Origin of Species, by Charles Darwin\r\n\r\nThis eBook is for t'
+```
+
+There are things here that need explaining, including escape sequences and characters, denoted by the
+backslash: `\`
+
+Here's what the extra codes mean:
+
+
 
 ### <a name='preprocessing'/>2.2 Text preprocessing
 
