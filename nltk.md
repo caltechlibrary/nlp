@@ -17,39 +17,43 @@ processing has already taken place.
 
 Here is code for storing a file locally:
 
-    # assign a text to a variable, `title`
-    title = 'A Town Called Alice'
-    
-    # open a file for writing, assign to variable `f`
-    with open('demofile.txt', 'w') as f:
-      f.write(title)
-      
-    # open a file for appending, assign to variable `f`
-    with open('demofile.txt', 'a') as f:
-      f.write(', by Nevil Shute')
-      
-    # open a file file reading, assign to variable `f`
-    with open('demofile.txt', 'r') as f:
-      title2 = f.read()
-      
-    print('Title:', title)
-    print('Title with author:', title2)
-    
+```python
+# assign a text to a variable, `title`
+title = 'A Town Called Alice'
+
+# open a file for writing, assign to variable `f`
+with open('demofile.txt', 'w') as f:
+  f.write(title)
+  
+# open a file for appending, assign to variable `f`
+with open('demofile.txt', 'a') as f:
+  f.write(', by Nevil Shute')
+  
+# open a file file reading, assign to variable `f`
+with open('demofile.txt', 'r') as f:
+  title2 = f.read()
+  
+print('Title:', title)
+print('Title with author:', title2)
+```
+
 Note the attributes 'w', 'a' and 'r' for 'write' (i.e. overwrite, create), 'append', and 'read' on the open function.
 Also, the file is automatically closed at the end of each `open()` code block.
 
 For reading text from the web we will use the `request` method from the `urllib` library to download the text of 'Origin of the Species'
 from [Project Gutenberg](https://www.gutenberg.org/). We will use this version: [The Origin of Species by Means of Natural Selection by Charles Darwin (6th. ed.)](https://www.gutenberg.org/ebooks/2009), the [plain text UTF-8 version](https://www.gutenberg.org/cache/epub/2009/pg2009.txt).
 
-### <a name='preprocessing'/>2. Text preprocessing
 
-### <a name='freq'/>2.- 2.3 Word contexts and frequency distribution
 
-### <a name='pos'/>2.- 2.4 Parts-of-speech tagging
+### <a name='preprocessing'/>2.2 Text preprocessing
 
-### <a name='ner'/>2.- 2.5 Named entity recognition
+### <a name='freq'/>2.3 Word contexts and frequency distribution
 
-### <a name='sa'/>2.- 2.6 Sentiment analysis
+### <a name='pos'/>2.4 Parts-of-speech tagging
+
+### <a name='ner'/>2.5 Named entity recognition
+
+### <a name='sa'/>2.6 Sentiment analysis
 
 ---
 
