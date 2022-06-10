@@ -86,9 +86,13 @@ Here's what the extra codes mean:
 | --- | --- |
 | leading `b` | this is a `byte` object, and not a `string` object |
 | `\xef\xbb\xdf` | the character encoding is UTF-8 |
+| `\f` | form feed |
 | `\r` | carriage return |
-| `\n` | new line |
-| `\t` | tab (not present here) |
+| `\n` | line feed (new line) |
+| --- | --- |
+| --- | other codes (not present here) |
+| `\t` | tab |
+| `\b` | backspace |
 
 Use the `decode()` method to turn byte object into a string object, and the `strip()` method to remove the 
 
