@@ -90,6 +90,8 @@ Here's what the extra codes mean:
 | `\n` | new line |
 | `\t` | tab (not present here) |
 
+Use the `decode()` method to turn byte object into a string object, and the `strip()` method to remove the 
+
 ### <a name='preprocessing'/>2.2 Text preprocessing
 
 ### <a name='freq'/>2.3 Word contexts and frequency distribution
