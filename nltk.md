@@ -18,18 +18,18 @@ processing has already taken place.
 Here is code for storing a file locally:
 
 ```python
-# assign a text to a variable, *title*
+# assign a text to a variable, `title`
 title = 'A Town Called Alice'
 
-# open a file for writing, assign to variable f
+# open a file for writing, assign to variable `f`
 with open('demofile.txt', 'w') as f:
   f.write(title)
   
-# open a file for appending, assign to variable f
+# open a file for appending, assign to variable `f`
 with open('demofile.txt', 'a') as f:
   f.write(', by Nevil Shute')
   
-# open a file file reading, assign to variable f
+# open a file file reading, assign to variable `f`
 with open('demofile.txt', 'r') as f:
   title2 = f.read()
   
@@ -43,7 +43,28 @@ Also, the file is automatically closed at the end of each `open()` code block.
 For reading text from the web we will use the `request` method from the `urllib` library to download the text of 'Origin of the Species'
 from [Project Gutenberg](https://www.gutenberg.org/). We will use this version: [The Origin of Species by Means of Natural Selection by Charles Darwin (6th. ed.)](https://www.gutenberg.org/ebooks/2009), the [plain text UTF-8 version](https://www.gutenberg.org/cache/epub/2009/pg2009.txt).
 
+We only need one method from the `urllib` library: `request`
 
+```python
+from urllib import request
+```
+
+Let's assign the URL to a variable, use the `request()` to create a request object that provide access to the URL, 
+and the `read()` method to read the contents of the URL to a file:
+
+```python
+url = "https://www.gutenberg.org/cache/epub/2009/pg2009.txt"
+req = request.urlopen(url)
+origin_txt = req.read()
+```
+
+Print our the first 50 characters of origin_text:
+
+```python
+print(origin_txt[:100])
+```
+There are a few escape sequences here that need explaining. Escape characters and sequences are denoted by the
+backslash: `\\`
 
 ### <a name='preprocessing'/>2.2 Text preprocessing
 
