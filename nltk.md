@@ -18,18 +18,18 @@ processing has already taken place.
 Here is code for storing a file locally:
 
 ```python
-# assign a text to a variable, `title`
+# assign a text to a variable, *title*
 title = 'A Town Called Alice'
 
-# open a file for writing, assign to variable `f`
+# open a file for writing, assign to variable f
 with open('demofile.txt', 'w') as f:
   f.write(title)
   
-# open a file for appending, assign to variable `f`
+# open a file for appending, assign to variable f
 with open('demofile.txt', 'a') as f:
   f.write(', by Nevil Shute')
   
-# open a file file reading, assign to variable `f`
+# open a file file reading, assign to variable f
 with open('demofile.txt', 'r') as f:
   title2 = f.read()
   
