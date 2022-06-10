@@ -89,8 +89,11 @@ Here's what the extra codes mean:
 | `\f` | form feed |
 | `\r` | carriage return |
 | `\n` | line feed (new line) |
+
+Other codes you will encounter:
+
+| code | meaning |
 | --- | --- |
-| --- | other codes (not present here) |
 | `\t` | tab |
 | `\b` | backspace |
 
