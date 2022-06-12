@@ -217,6 +217,13 @@ Strings can be compared using these operators
 
 ### <a name='regex'/>1.5 Regular Expressions in Python
 
+Regular expressions ('regex') are templates for complex pattern matching of text that 
+provide more sophisticated matching that comparison operators and the `.find()` method.
+Regular expressions are implemented in Python with the `re` module:
+
+```Python
+import re
+```
 
 ---
 
