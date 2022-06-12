@@ -238,19 +238,64 @@ footnote = 'I have taken the date of the first publication of Lamarck from
  a full account is given of Buffon’s conclusions on the same subject.
  It is curious how largely my grandfather, Dr. Erasmus Darwin,
  anticipated the views and erroneous grounds of opinion of Lamarck in
- his “Zoonomia” (vol. i. pages 500-510), published in 1794.'
+ his “Zoonomia” (vol. i. pages 500-510), published in 1794. According
+ to Isid. Geoffroy there is no doubt that Goethe was an extreme
+ partisan of similar views, as shown in the introduction to a work
+ written in 1794 and 1795, but not published till long afterward; he
+ has pointedly remarked (“Goethe als Naturforscher”, von Dr. Karl
+ Meding, s. 34) that the future question for naturalists will be how,
+ for instance, cattle got their horns and not for what they are used.
+ It is rather a singular instance of the manner in which similar views
+ arise at about the same time, that Goethe in Germany, Dr. Darwin in
+ England, and Geoffroy Saint-Hilaire (as we shall immediately see) in
+ France, came to the same conclusion on the origin of species, in the
+ years 1794-5.'
  ```
 
 Let's find 'Darwin' in our text using `re`
 
 ```Python
 import re
-re.search('Darwin'. footnote)
+result = re.search('Darwin', footnote)
+print(result)
 ```
 
 The following 'match' object is returned:
 
 `<re.Match object; span=(331, 337), match='Darwin'>`
+
+This tells you that the search was successful, and where the text was found:
+
+`footnote[331:337]`
+
+Using 'metacharacters' we are find a title that is bounded by opening/closing quotes:
+
+```Python
+searchterm = '“.+”'
+result = re.search(searchterm, footnote)
+print(result)
+```
+
+In the `searchterm` there are two metacharacters:
+
+| . | matches any single character, except newline |
+| + | matches one of more repetitions |
+
+So, the search is for opening and closing quotes surrounding at least one character.
+This returns:
+
+`<re.Match object; span=(98, 119), match='“Hist. Nat. Générale”'>`
+
+The match object, `result` in this case, has the following methods and attribute:
+
+| name | attribute or method | returns |
+| --- | --- |
+| `string` | attribute | the string passed into the function; `footnote` in this case |
+| `span()` | method | a tuple containing the start and end of the text slice |
+| `group()` | method | the matched part of the string |
+| `start()` | method | the start index of the searchterm |
+| `end()` | method | the end index of the searchterm |
+
 
 ---
 
