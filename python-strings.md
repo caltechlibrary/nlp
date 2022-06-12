@@ -299,6 +299,7 @@ The match object, `result` in this case, has the following methods and attribute
 Here is a complete code example of how these might be used:
 
 ```Python
+import re
 searchterm = '“.+”'
 result = re.search(searchterm, footnote)
 print('Title found:', result.group())
@@ -310,6 +311,7 @@ We can alter this code to find all the matches using `finditer()` rather than `s
 `finditer()` return an iterator that yields ALL the matches: 
 
 ```Python
+import re
 searchterm = '“.+”'
 results = re.finditer(searchterm, footnote)
 for result in results:
