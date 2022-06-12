@@ -219,11 +219,38 @@ Strings can be compared using these operators
 
 Regular expressions ('regex') are templates for complex pattern matching of text that 
 provide more sophisticated matching that comparison operators and the `.find()` method.
+
 Regular expressions are implemented in Python with the `re` module:
 
 ```Python
 import re
 ```
+
+Let's use the following text for our examples. Note the use of triple quotes to delimit
+multi-line texts, and the presence of opening and closing quotes, apostrophe, and accented 
+characters. These are all legitimate unicode characters, distinct from the straight quotes 
+we use in our code.
+
+```Python
+footnote = 'I have taken the date of the first publication of Lamarck from
+ Isidore Geoffroy Saint-Hilaire’s (“Hist. Nat. Générale”, tom. ii. page
+ 405, 1859) excellent history of opinion on this subject. In this work
+ a full account is given of Buffon’s conclusions on the same subject.
+ It is curious how largely my grandfather, Dr. Erasmus Darwin,
+ anticipated the views and erroneous grounds of opinion of Lamarck in
+ his “Zoonomia” (vol. i. pages 500-510), published in 1794.'
+ ```
+
+Let's find 'Darwin' in our text using `re`
+
+```Python
+import re
+re.search('Darwin'. footnote)
+```
+
+The following 'match' object is returned:
+
+`<re.Match object; span=(331, 337), match='Darwin'>`
 
 ---
 
