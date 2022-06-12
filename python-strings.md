@@ -296,6 +296,28 @@ The match object, `result` in this case, has the following methods and attribute
 | `start()` | method | the start index of the searchterm |
 | `end()` | method | the end index of the searchterm |
 
+Here is a complete code example of how these might be used:
+
+```Python
+searchterm = '“.+”'
+result = re.search(searchterm, footnote)
+print('Title found:', result.group())
+print('Start index:', result.start())
+print('Ending index:', result.end())
+```
+
+We can alter this code to find all the matches using `finditer()` rather than `search()`.
+`finditer()` return an iterator that yields ALL the matches: 
+
+```Python
+searchterm = '“.+”'
+results = re.finditer(searchterm, footnote)
+for result in results:
+  print('Title found:', result.group())
+  print('Start index:', result.start())
+  print('Ending index:', result.end())
+  print()
+```
 
 ---
 
