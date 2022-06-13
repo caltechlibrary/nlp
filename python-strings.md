@@ -261,6 +261,8 @@ print(text)
 
 ### <a name='regex'/>1.5 Regular Expressions in Python
 
+For a good introduction to regular expressions in Python see [https://docs.python.org/3/howto/regex.html](https://docs.python.org/3/howto/regex.html)
+
 Regular expressions ('regex') are templates for complex pattern matching of text that 
 provide more sophisticated matching that comparison operators and the `.find()` method.
 
@@ -364,7 +366,27 @@ for result in results:
   print('Ending index:', result.end())
   print()
 ```
-For a good introduction to regular expressions in Python see [https://docs.python.org/3/howto/regex.html](https://docs.python.org/3/howto/regex.html)
+
+Let's make this code a function:
+
+```python
+from re import finditer
+
+def reprint(restring, texttosearch):
+  results = finditer(restring, texttosearch)
+  for result in results:
+    print('Title found:', result.group())
+    print('Start index:', result.start())
+    print('Ending index:', result.end())
+    print()
+  ```
+
+> **Exercise:** What does this example do?
+
+```python
+searchterm = 'p\.|page[s|\s]|s\.'
+reprint(searchterm, footnote)
+```
 
 ---
 
