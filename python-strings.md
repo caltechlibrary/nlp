@@ -384,10 +384,10 @@ def reprint(restring, texttosearch):
 > **Exercise:** What does this example do?
 
 ```python
-searchterm = 'p\.|page[s|\s]|s\.'
+searchterm = '(p\.|page[s\s]|s\.)(\s+|\d+)+'
 reprint(searchterm, footnote)
 ```
 
 ---
 
-##### \< [Home](index.md) | [2. NLTK](nltk.md) \>
+<!--- ##### \< [Home](index.md) | [2. NLTK](nltk.md) \> --->
