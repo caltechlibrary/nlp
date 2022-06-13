@@ -27,9 +27,9 @@ This is a different string:
 
 The length property of a string is evaluated with the `len()` function:
 
-'''python
+```python
 len('  Peter Piper picked a  peck of pickled peppers. ')
-'''
+```
 
 Note that the length includes the spaces. The `len()` function can be used to evaluate the length, or size, or
 many different Python objects; not just text.
