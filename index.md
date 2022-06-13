@@ -41,14 +41,16 @@ Before the workshop please confirm that you have a Google Account with access to
     + 1.4 Comparing and searching strings
     + 1.5 Regular expressions
 
-2. [NLTK](nltk.md) (Natural Language Toolkit)
+<!--- 2. [NLTK](nltk.md) (Natural Language Toolkit) --->
+2. Natural Language Toolkit
     + 2.1 Text preprocessing (spellchecking, stemming and lemmatization)
     + 2.2 Word contexts and frequency distribution
     + 2.3 Parts-of-speech tagging
     + 2.4 Named entity recognition
     + 2.5 Sentiment analysis
 
-3. [spaCy](spacy.md)
+<!--- 3. [spaCy](spacy.md) --->
+3. spaCy
     + 3.1 Statistical modeling of text
     + 3.2 Word vectors and similarity
     + 3.3 Processing pipelines
