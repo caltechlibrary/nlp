@@ -17,17 +17,19 @@ In this part of he workshop we will explore Python string objects. A string obje
 
 Here is an example of a string:
 
-    'Peter Piper picked a peck of pickled peppers.'
+`'Peter Piper picked a peck of pickled peppers.'`
 
 Strings are designated by bounding single or double quotes.
 
 This is a different string:
 
-    '  Peter Piper picked a  peck of pickled peppers. '
+`'  Peter Piper picked a  peck of pickled peppers. '` 
 
 The length property of a string is evaluated with the `len()` function:
 
-    len('  Peter Piper picked a  peck of pickled peppers. ')
+'''python
+len('  Peter Piper picked a  peck of pickled peppers. ')
+'''
 
 Note that the length includes the spaces. The `len()` function can be used to evaluate the length, or size, or
 many different Python objects; not just text.
@@ -37,29 +39,35 @@ many different Python objects; not just text.
 A 'function' is code that is independent of a specific object. A 'method' is code that is associated with an object. 
 Use a period and the method name to access it, like this:
 
-    'Peter Piper picked'.upper()
+```python
+'Peter Piper picked'.upper()
+```
 
 > **Exercise:** Assign a string to a variable
 
-     s = 'Peter Piper picked a peck of pickled peppers.'
+```python
+s = 'Peter Piper picked a peck of pickled peppers.'
+```
 
 > What does the `upper()` method do? 
 
-     s.upper()
+```python
+s.upper()
+```
 
 > Explore the following string methods:
 
-     s.lower()
+`s.lower()`
      
-     s.title()
+`s.title()`
      
-     s.count('p')
+`s.count('p')`
      
 > How often does 'p' appear in s? Count the occurences of 'pe'?
 
 > What does this do?
 
-    s.lower().count('pe')
+`s.lower().count('pe')`
 
 ### <a name='iterables'/>1.2 Strings as Iterables
 
@@ -68,9 +76,11 @@ The position of each symbol can be ascertained with with .index() method. The fo
 return the position of 't' in the string. Note that the first position is '0', not '1'.
 This is known as 'zero-based' indexing.
 
-    opening = 'Once upon a time...'
-    print(opening.index('t'))
-    
+```python
+opening = 'Once upon a time...'
+print(opening.index('t'))
+```
+
 An object that consist of an ordered set of other objects is 'iterable', because you can iterate,
 or loop over those objects. A string consists of an ordered set of single-characters strings, so
 it is iterable. That is, 'Once upon a time...' consists of 'O', 'n', 'c', 'e', etc. The indexes of
@@ -78,47 +88,61 @@ the characters are 0, 1, 2, 3, 4, etc.
 
 Iterable objects can be looped over like this:
 
-    for character in opening:
-      print(character)
-      
+```python
+for character in opening:
+  print(character)
+```
+
 Note that the variable 'character' is totally arbitrary. It is good to use a variable name that aids
 understanding, but it can actually be anything at all. Change 'character' to 'banana' and the code will
 work just as well.
 
 > **Exercise:** Explain the output for the following:
 
-    for character in opening:
-      print(opening.index(character))
+```python
+for character in opening:
+  print(opening.index(character))
+```
 
 ### <a name='lists'/>1.3 Lists
 
 A Python list is another iterable object. Like a string it is an ordered set of objects:
 
-    a_list = [1, 2, 3, 1024]
-    another_list = ['Once', 'upon', 'a', 'time', '...']
+```python
+a_list = [1, 2, 3, 1024]
+another_list = ['Once', 'upon', 'a', 'time', '...']
+```
 
 Lists do not have to be homogeneous:
 
-    list3 = [1, 'Jack', 2, 'and the Beanstalk']
-    list4 = [list3, another_list, a_list]
+```python
+list3 = [1, 'Jack', 2, 'and the Beanstalk']
+list4 = [list3, another_list, a_list]
+```
 
 The output from `print(list4)` should look like this:
 
-    [[1, 'Jack', 2, 'and the Beanstalk'], ['Once', 'upon', 'a', 'time', '...'], [1, 2, 3, 1024]]
+```python
+[[1, 'Jack', 2, 'and the Beanstalk'], ['Once', 'upon', 'a', 'time', '...'], [1, 2, 3, 1024]]
+```
 
 Note that strings are enclosed in quotation marks, whereas variables (e.g. list3, list4) are not.
 
 > **Exercise:** What output would you expect from this?
 
-    for obj in list4:
-      print(obj)
+```python
+for obj in list4:
+  print(obj)
+```
 
 > **Exercise:** What output would you expect from this?
 
-    for obj in list4:
-      for subobj in obj:
-        print(subobj)
-        
+```python
+for obj in list4:
+  for subobj in obj:
+    print(subobj)
+'''
+
 > Try it out.
 
 In NLP it is often useful to be able to change strings into lists and vice versa. The string methods `.split()`
@@ -129,62 +153,79 @@ is omitted that split will be on spaces.
 
 For example:
 
-    'Once upon a time ...'.split()
+```python
+'Once upon a time ...'.split()
+```
 
 will return:
 
-    ['Once', 'upon', 'a' 'time', '...']
+```python
+['Once', 'upon', 'a' 'time', '...']
+```
 
 But
 
-    'Once upon a time ...'.split('e')
+```python
+'Once upon a time ...'.split('e')
+```
 
-wil return:
+will return:
 
-    ['Onc', ' upon a tim', ' ...']
+```python
+['Onc', ' upon a tim', ' ...']
+```
 
 The `.join()` method does the opposite. `string2.join(list)` takes the elements in list and concatenates them
 into a string with string 2 as a separator.
 
 For instance:
 
-    another_list = ['Once', 'upon', 'a', 'time', '...']
-    ' '.join(another_list)
+```python
+another_list = ['Once', 'upon', 'a', 'time', '...']
+' '.join(another_list)
+```
 
 will return:
 
-    'Once upon a time ...'
+```python
+'Once upon a time ...'
+```
 
 > **Exercise:** What does the following return:
 
-    syllables = ['an', 'ti', 'di', 'ses', 'ta', 'blish', 'men', 'ta', 'ri', 'an', 'ism']
-    ''.join(syllables)
+```python
+syllables = ['an', 'ti', 'di', 'ses', 'ta', 'blish', 'men', 'ta', 'ri', 'an', 'ism']
+''.join(syllables)
+```
 
 ### <a name='compare-search'/>1.4 Comparing and Searching Strings
 
 The `.find()` method is used to find a string of characters in a string. It has the following syntax:
 
-    'a string'.find(value, begin, end)
-
+```python
+'a string'.find(value, begin, end)
+```
 where 'value' is the string to find, and begin and end are the beginning and ending positions of the search. For example:
 
-    'the quick brown fox jumped over the lazy dog'.find('the', 10)
+```python
+'the quick brown fox jumped over the lazy dog'.find('the', 10)
+```
 
-will return
-
-    32
+will return `32`
 
 If the string is not found, `-1` is returned.
 
 > **Exercise:** Here is code to count the number of words that contain the letter `o`. Why does it give an incorrect answer? Can you correct the code?
 
-    text = 'The quick brown fox jumped over the lazy dog'
-    text_list = text.split()
-    numb = 0
-    for word in text_list:
-      if word.find('o') > 0:
-        numb += 1
-    print('number of words:', numb)
+```python
+text = 'The quick brown fox jumped over the lazy dog'
+text_list = text.split()
+numb = 0
+for word in text_list:
+  if word.find('o') > 0:
+    numb += 1
+print('number of words:', numb)
+```
 
 Strings can be compared using these operators
 
@@ -203,17 +244,16 @@ Strings can be compared using these operators
 
 > Correct the code to make it work as you would expect.
 
-    text = 'The quick brown Fox jumped over the lazy Dog'.split()
-    len1 = len2 = len(text)-1
-    for looper in range(len1):
-      for pos in range(len2):
-        if text[pos] > text[pos+1]:
-          text[pos], text[pos+1] = text[pos+1], text[pos]
-      len2 -= 1
-    print(text)
-    
-
-    
+```python
+text = 'The quick brown Fox jumped over the lazy Dog'.split()
+len1 = len2 = len(text)-1
+for looper in range(len1):
+  for pos in range(len2):
+    if text[pos] > text[pos+1]:
+      text[pos], text[pos+1] = text[pos+1], text[pos]
+  len2 -= 1
+print(text)
+```    
 
 ### <a name='regex'/>1.5 Regular Expressions in Python
 
@@ -222,7 +262,7 @@ provide more sophisticated matching that comparison operators and the `.find()` 
 
 Regular expressions are implemented in Python with the `re` module:
 
-```Python
+```python
 import re
 ```
 
@@ -231,7 +271,7 @@ multi-line texts, and the presence of opening and closing quotes, apostrophe, an
 characters. These are all legitimate unicode characters, distinct from the straight quotes 
 we use in our code.
 
-```Python
+```python
 footnote = 'I have taken the date of the first publication of Lamarck from
  Isidore Geoffroy Saint-Hilaire’s (“Hist. Nat. Générale”, tom. ii. page
  405, 1859) excellent history of opinion on this subject. In this work
@@ -254,7 +294,7 @@ footnote = 'I have taken the date of the first publication of Lamarck from
 
 Let's find 'Darwin' in our text using `re`
 
-```Python
+```python
 import re
 result = re.search('Darwin', footnote)
 print(result)
@@ -270,7 +310,7 @@ This tells you that the search was successful, and where the text was found:
 
 Using 'metacharacters' we are find a title that is bounded by opening/closing quotes:
 
-```Python
+```python
 searchterm = '“.+”'
 result = re.search(searchterm, footnote)
 print(result)
@@ -298,7 +338,7 @@ The match object, `result` in this case, has the following methods and attribute
 
 Here is a complete code example of how these might be used:
 
-```Python
+```python
 import re
 searchterm = '“.+”'
 result = re.search(searchterm, footnote)
@@ -310,7 +350,7 @@ print('Ending index:', result.end())
 We can alter this code to find all the matches using `finditer()` rather than `search()`.
 `finditer()` return an iterator that yields ALL the matches: 
 
-```Python
+```python
 import re
 searchterm = '“.+”'
 results = re.finditer(searchterm, footnote)
