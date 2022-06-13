@@ -264,7 +264,7 @@ print(text)
 For a good introduction to regular expressions in Python see [https://docs.python.org/3/howto/regex.html](https://docs.python.org/3/howto/regex.html)
 
 Regular expressions ('regex') are templates for complex pattern matching of text that 
-provide more sophisticated matching that comparison operators and the `.find()` method.
+provide more sophisticated matching than comparison operators and the `.find()` method.
 
 Regular expressions are implemented in Python with the `re` module:
 
