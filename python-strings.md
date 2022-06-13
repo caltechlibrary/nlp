@@ -364,6 +364,7 @@ for result in results:
   print('Ending index:', result.end())
   print()
 ```
+For a good introduction to regular expressions in Python see [https://docs.python.org/3/howto/regex.html](https://docs.python.org/3/howto/regex.html)
 
 ---
 
