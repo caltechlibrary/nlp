@@ -96,6 +96,9 @@ Other codes you will encounter:
 | --- | --- |
 | `\t` | tab |
 | `\b` | backspace |
+| `\uxxxx` | character with 16-bit hex value 'xxxx' |
+| `\Uxxxxxxxx` | character with 32-bit hex value 'xxxxxxxx' |
+| `\N{name}` | character named 'name' in the Unicode database |
 
 Use the `decode('utf-8-sig')` method to turn byte object into a string object without the leading 'signature' codes, and verify that it is a string: 
 
