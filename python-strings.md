@@ -278,7 +278,7 @@ characters. These are all legitimate unicode characters, distinct from the strai
 we use in our code.
 
 ```python
-footnote = 'I have taken the date of the first publication of Lamarck from
+footnote = '''I have taken the date of the first publication of Lamarck from
  Isidore Geoffroy Saint-Hilaire’s (“Hist. Nat. Générale”, tom. ii. page
  405, 1859) excellent history of opinion on this subject. In this work
  a full account is given of Buffon’s conclusions on the same subject.
@@ -295,7 +295,7 @@ footnote = 'I have taken the date of the first publication of Lamarck from
  arise at about the same time, that Goethe in Germany, Dr. Darwin in
  England, and Geoffroy Saint-Hilaire (as we shall immediately see) in
  France, came to the same conclusion on the origin of species, in the
- years 1794-5.'
+ years 1794-5.'''
  ```
 
 Let's find 'Darwin' in our text using `re`
