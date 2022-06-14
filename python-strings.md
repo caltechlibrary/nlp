@@ -390,4 +390,4 @@ reprint(searchterm, footnote)
 
 ---
 
-<!--- ##### \< [Home](index.md) | [2. NLTK](nltk.md) \> --->
+##### \< [Home](index.md) | [2. NLTK](nltk.md) \>
