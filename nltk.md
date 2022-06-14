@@ -215,6 +215,33 @@ fdist_text.plot(20, cumulative=True)
 
 ### <a name='sa'/>2.6 Sentiment analysis
 
+Sentiment analysis (or opinion mining) is the use of NLP, 
+text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and 
+study affective states and subjective information. Sentiment analysis is widely applied to reviews and survey responses, 
+online and social media, and healthcare materials for applications that range from marketing to customer service to clinical medicine.
+
+We will use two text corpora that come bundled with the NLTK to explore sentiment analysis, twitter samples and movie reviews.
+We also initialize NLTK's 'Sentiment Intensity Analyzer', which will use a pretrained algrorithm, VADER, to product sentiment scores.
+
+```python
+import nltk
+nltk.download(['twitter_samples', 'movie_reviews', 'vader_lexicon'])
+from nltk.sentiment import SentimentIntensityAnalyzer
+sia = SentimentIntensityAnalyzer()
+sia.polarity_scores("I love the Library!")
+```
+
+The four scores returned are measure of negative, neutral, position sentiment, and a compound score.
+
+The method `nltk.corpus.twitter_samples.strings()` returns the 30,000 twitter samples.
+We can 
+- put them into a list, disabling the URLs for safety:
+
+```python
+tweets = [t.replace("://", "//") for t in nltk.corpus.twitter_samples.strings()]
+
+
+
 ---
 
 ##### \< [1. Text Processing in Python](python-strings.md) \| [3. spaCy](spacy.md) \>
