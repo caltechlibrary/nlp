@@ -211,7 +211,45 @@ fdist_text.plot(20, cumulative=True)
 
 ### <a name='pos'/>2.4 Parts-of-speech tagging
 
+NLTK provides a part-of-speech (POS) tagger called the 'averaged perceptron tagger' (among others).
+'punkt' is used to inform the sentence and word tokenization.
+
+```python
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.tag import pos_tag
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('maxent_ne_chunker')
+nltk.download('words')
+```
+
+Let's take a text from the Caltech website, and preprocess it::
+
+```python
+text = '''Founded in 1891, Caltech is a world-renowned
+science and engineering institute that marshals
+some of the world’s brightest minds and most
+innovative tools to address fundamental scientific
+questions and pressing societal challenges. An
+independent, privately supported institution
+located in Pasadena, California, Caltech also
+manages the Jet Propulsion Laboratory (JPL),
+located 6 miles north of campus, for NASA.'''
+
+text = word_tokenize(text)
+text = pos_tag(text)
+print(text)
+```
+
+You can find a table of the POS abbreviations here: 
+[https://www.guru99.com/pos-tagging-chunking-nltk.html](https://www.guru99.com/pos-tagging-chunking-nltk.html)
+
+There is a lot more you can do, but we will discuss it further in the context of spaCy.
+
 ### <a name='ner'/>2.5 Named entity recognition
+
+
 
 ### <a name='sa'/>2.6 Sentiment analysis
 
