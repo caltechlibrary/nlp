@@ -254,6 +254,13 @@ This is 'named entity recognition. This diagram illustrates the idea:
 
 <img src='chunk.png' alt='Chunking diagram'/>
 
+We will use the pre-trained NLTK chunker, 'ne_chunk'.
+
+```python
+ner_text = nltk.ne_chunk(text)
+print(ner_text)
+```
+
 ### <a name='sa'/>2.6 Sentiment analysis
 
 Sentiment analysis (or opinion mining) is the use of NLP, 
