@@ -234,13 +234,83 @@ sia.polarity_scores("I love the Library!")
 The four scores returned are measure of negative, neutral, position sentiment, and a compound score.
 
 The method `nltk.corpus.twitter_samples.strings()` returns the 30,000 twitter samples.
-We can 
-- put them into a list, disabling the URLs for safety:
+We can:
+
+- put them into a list, disabling the URLs for safety
+- create a pandas dataframe from the list
+- add a column containing the sia scores, and each of the component scores
 
 ```python
+import pandas as pd
+
 tweets = [t.replace("://", "//") for t in nltk.corpus.twitter_samples.strings()]
+df = pd.DataFrame(tweets, columns=['tweet'])
+df['sia'] = df['tweet'].apply(lambda x: sia.polarity_scores(x))
+df['neg'] = df['sia'].apply(lambda x : x['neg'])
+df['neu'] = df['sia'].apply(lambda x : x['neu'])
+df['pos'] = df['sia'].apply(lambda x : x['pos'])
+df['compound'] = df['sia'].apply(lambda x : x['compound'])
+```
 
+In this particular example we do not know how accurate the analysis is. Let's look at an example
+with positive and negative sentiment already assigned: the movie reviews.
 
+The reviews are assigned ids that include their positive and negative rating. We first need to:
+
+- acquire a full list of the ids
+- create a dataframe
+- import the texts into the dataframe
+- import the classification of each movie
+
+```python
+positive_review_ids = nltk.corpus.movie_reviews.fileids(categories=["pos"])
+negative_review_ids = nltk.corpus.movie_reviews.fileids(categories=["neg"])
+all_review_ids = positive_review_ids + negative_review_ids
+
+df_reviews = pd.DataFrame(nltk.corpus.movie_reviews.fileids(), columns=['id'])
+df_reviews['text'] = df_reviews['id'].apply(lambda x: nltk.corpus.movie_reviews.raw(x))
+df_reviews['classification'] = df_reviews['id'].apply(lambda x: 0 if x[:3]=='neg' else 1)
+
+df_reviews
+```
+
+Sentiment analysis is much more effective on short texts, so we should measure the sentiment
+of individual sentences in each review and then sum them, rather than running the analyzer on
+the entire review. Here is a function to find the mean score for a review and return either '1' (for positive)
+or '0' (for negative). `sent_tokenize` is NLTK's tool for tokenizing by sentence.
+
+```python
+from statistics import mean
+def sa_reviews(text):
+  scores = [sia.polarity_scores(sentence)["compound"] for sentence in nltk.sent_tokenize(text)]
+  if mean(scores) > 0:
+    return 1
+  else:
+    return 0
+```
+
+We can use this to:
+- add a 'score' column to the dataframe
+- add a 'match' column to indicate whether our assigned classification matches the existing one
+
+```python
+df_reviews['score'] = df_reviews['text'].apply(sa_reviews)
+df_reviews['match'] = df_reviews.apply(lambda x: 1 if x['score']==x['classification'] else 0, axis=1)
+
+df_reviews
+```
+
+We know that there are 2000 reviews (1000 positive, 1000 negative), so we can compute the accuracy 
+of our classification:
+
+```python
+accuracy = df_reviews['match'].sum()/2000
+```
+
+A match of 64% actually isn't too bad. It's not great either!
+
+The next step would be to develop more specific 'features' from the data and to use machine learning 
+algorithms to learn from the data, rather than using a generic, pre-trained tool.
 
 ---
 
