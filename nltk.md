@@ -249,7 +249,10 @@ There is a lot more you can do, but we will discuss it further in the context of
 
 ### <a name='ner'/>2.5 Named entity recognition
 
+Named entity recognition is the process of grouping, or 'chunking', words and recognizing them as a single entity.
+This is 'named entity recognition. This diagram illustrates the idea:
 
+<img src='chunk.png' alt='Chunking diagram'/>
 
 ### <a name='sa'/>2.6 Sentiment analysis
 
