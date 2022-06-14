@@ -109,7 +109,7 @@ print('type of origin_txt:, type(origin_txt))
 print('beginning of origin_txt:', origin_txt[:100])
 print('length of origin_txt':, len(origin_txt), 'characters')
 ```
-By examining the beginning and end of the text on the Project Gutenberg website we know that the text begins after
+By examining the beginning and end of the text on the Project Gutenberg website we know that the text begins after:
 
 `*** START OF THE PROJECT GUTENBERG EBOOK ON THE ORIGIN OF SPECIES ***`
 
@@ -127,9 +127,87 @@ endpos = origin_txt.rfind(s2)
 origin_txt = origin_txt[startpos:endpos]
 ```
 
+> **An aside:** List comprehensions.
+
+List comprehensions are a Python technique for transforming a list. They are generally
+very fast and efficient, and a better option than writing multi-line code. 
+
+For example, consider this list:
+
+```python
+title = ['On', 'the', 'Origin', 'of', 'Species', 'BY', 'MEANS', 'OF', 'NATURAL', 'SELECTION']
+```
+
+This comprehension simply replicates the list:
+
+```python
+[word for word in title]
+```
+
+However, we can normalize the list like this:
+
+```python
+title_words_norm = [word.lower() for word in title if len(word) > 2]
+```
+
 ### <a name='preprocessing'/>2.2 Text preprocessing
 
+The type of preprocessing you will do for a project will depend on the objectives.
+If we are only interested in building a list of words, a vocabulary, then this is
+a fairly common type of preprocessing:
+
+```python
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+nltk.download('stopwords')
+from string import punctuation
+
+words = word_tokenize(origin_txt, language='english')
+
+words = [token.lower() for token in tokens] # lowercasing all words
+words = [token for token in tokens if not token.isdigit()] # removing any tokens that are only digits 
+words = [token for token in tokens if token not in punctuation] # remove punctuations
+mystopwords = set(stopwords.words("english"))
+words = [token for token in tokens if token not in mystopwords] # removes stopwords
+words = [token for token in tokens if len(token) > 3] # remove tokens with fewer than four characters
+```
+
+Our `words` list includes a normalized list of words: all lowercase, without numbers, punctuation, stopwords,
+or short words.
+
+For grammatical analysis, or sentiment analysis, we would likely want to keep all the words,
+as well as the sentence structure.
+
 ### <a name='freq'/>2.3 Word contexts and frequency distribution
+
+Creating an NLTK text object from the text allows us to examine word contexts and frequency distribution.
+For this we will use the original text:
+
+```python
+origin_tokenized = word_tokenize(origin_txt, language='english')
+text = nltk.text.Text(origin_tokenized)
+```
+
+We can use this NLTK text object to examine characteristics of the text.
+The concordance method shows the context of words in the text:
+
+```python
+text.concordance('species')
+text.concordance('human')
+text.similar('species')
+text.dispersion_plot(['modification', 'change'])
+```
+
+We can use the frequency distribution method to examine word usage:
+
+```python
+from nltk import FreqDist
+fdist_text= FreqDist(words)
+fdist_text
+fdist_text.most_common(50)
+fdist_text.plot(20, cumulative=True)
+```
 
 ### <a name='pos'/>2.4 Parts-of-speech tagging
 
@@ -140,4 +218,5 @@ origin_txt = origin_txt[startpos:endpos]
 ---
 
 ##### \< [1. Text Processing in Python](python-strings.md) \| [3. spaCy](spacy.md) \>
+
 
