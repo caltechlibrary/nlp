@@ -48,7 +48,7 @@ Before the workshop please confirm that you have a Google Account with access to
     + 2.4 Named entity recognition
     + 2.5 Sentiment analysis
 
-3. spaCy
+3. [spaCy](spacy.md)
     + 3.1 Statistical modeling of text
     + 3.2 Word vectors and similarity
     + 3.3 Processing pipelines
