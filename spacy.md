@@ -30,10 +30,27 @@ for ent in doc.ents:                # read the 'entities', and their labels, fro
 ```
 (GPE = stands for 'Geopolitical entity')
 
-
-
+In its most basic form a spaCy application can be very short, but a lot of processing steps take place,
+and a lot more information is contained within the `doc` object.
 
 ### <a name='pipe'/>3.1 Processing pipelines
+
+We can list the contents of the processing pipeline with:
+
+```python
+print(nlp.pipe_names)
+```
+
+This will list the default pipeline components, in the order in which they are used:
+
+| tok2vec | Assign token-to-vector embeddings |
+| tagger | Assign part-of-speech-tags |
+| parser | Assign dependency labels |
+| attribute_ruler | Assign token attribute mappings and rule-based exceptions |
+| lemmatizer | Assign base forms to words using rules and lookups |
+| ner | Assign named entities |
+
+##### (from: [https://spacy.io/usage/processing-pipelines#pipelines](https://spacy.io/usage/processing-pipelines#pipelines)
 
 ### <a name='model'/>3.2 Statistical modelling of text
 
