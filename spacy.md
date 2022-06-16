@@ -100,7 +100,11 @@ for token in doc:
 As noted above, the smaller models do not include word vectors. A word vector is a multi-dimensional (e.g. 300 dimensions) vector
 representation of the meaning of a word. Each dimension can be thought of as representing some dimension of the concept that the word
 represents, but because the vectors are usually computationally derived in a complex way, using machine learning techniques for example,
-what each dimension represents is not possible to describe. But the "proof of the pudding is in the eating
+what each dimension represents is not possible to describe. But the "proof of the pudding is in the eating", as the proverb does.
+
+Here is what a word vector looks like:
+
+
 
 Similarity
 
