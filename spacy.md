@@ -116,13 +116,10 @@ nlp = spacy.load("en_core_web_md")  # use md or lg packages
 doc1 = nlp("The Caltech Library has a new website.")
 doc2 = nlp("Access to online journals is essential.")
 
-# Similarity of two documents
-print(doc1, "<->", doc2, doc1.similarity(doc2))
-
-# Similarity of words and phrases
 website = doc1[6]
 online_journals = doc2[2:4]
 print(website, "<->", online_journals, website.similarity(online_journals))
+```
 
 ### <a name='sci'/>3.5 sciSpaCy
 
