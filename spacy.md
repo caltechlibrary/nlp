@@ -129,7 +129,7 @@ print(website, "<->", online_journals, website.similarity(online_journals))
 As noted above, there are [many projects](https://spacy.io/universe) based on spaCy. [scispaCy](https://allenai.github.io/scispacy/)
 a package containing models for processing biomedical, scientific or clinical text, developed at the [Allen Institue for AI](https://allenai.org/) in Seattle. 
 
-
+> **Exercise:** With a biomedical text of your choice, try the [scispaCy demonstration](https://scispacy.apps.allenai.org/)
 
 ---
 
