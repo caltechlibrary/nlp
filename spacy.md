@@ -104,7 +104,7 @@ what each dimension represents is not possible to describe. But the "proof of th
 
 Here is what a word vector looks like:
 
-
+<img src='vector.png' alt='Word vector'/>
 
 Similarity
 
