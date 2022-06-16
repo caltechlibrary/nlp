@@ -1,10 +1,10 @@
 ## 3. spaCy
 
 - 3.1 [Introduction to spaCy](#spacy)
-- 3.1 [Processing pipelines](#pipe)
-- 3.2 [Text modelling](#model)
-- 3.3 [Word vectors and similarity](#vec)
-- 3.4 [spaCy examples](#ex)
+- 3.2 [Processing pipelines](#pipe)
+- 3.3 [Text modelling](#model)
+- 3.4 [Word vectors and similarity](#vec)
+- 3.5 [spaCy examples](#ex)
 
 ### <a name='spacy'/>3.1 Introduction to spacy
 
@@ -13,22 +13,22 @@ and production usage. Here is an example of spaCy code to extract 'entities' fro
 
 ```python
 import spacy                        # import the spaCy library
-nlp = spacy.load('en_core_web_sm')  # load the processing pipeline, `nlp`, based on the 'en_core_web_sm' model
+nlp = spacy.load('en_core_web_sm')  # load the processing pipeline
 text = ("Founded in 1891, Caltech is an "
         "independent, privately supported institution "
         "located in Pasadena, California. Caltech also "
         "manages the Jet Propulsion Laboratory (JPL), "
         "located 6 miles north of campus, for NASA.")
-doc = nlp(text)                     # create an nlp object named `doc` from the text using the model
-for ent in doc.ents:                # read the 'entities', and their labels, from `doc`
+doc = nlp(text)                     # create an nlp object named `doc`
+for ent in doc.ents:                # read the 'entities' and their labels, from `doc`
   print(ent.text, ent.label_)
 ```
-(GPE = stands for 'Geopolitical entity')
+##### (GPE = 'Geopolitical entity')
 
 In its most basic form a spaCy application can be very short, but a lot of processing steps take place,
 and a lot more information is contained within the `doc` object.
 
-### <a name='pipe'/>3.1 Processing pipelines
+### <a name='pipe'/>3.2 Processing pipelines
 
 We can list the contents of the processing pipeline with:
 
@@ -63,12 +63,26 @@ df
 
 ##### (There is a full list of token attributes here: [https://spacy.io/api/token#attributes](https://spacy.io/api/token#attributes))
 
-### <a name='model'/>3.2 Statistical modelling of text
+### <a name='model'/>3.3 Text modelling
 
-### <a name='vec'/>3.3 Acquiring a text
+### <a name='vec'/>3.4 Word vectors and similarity
 
-### <a name='ex'/>3.4 Acquiring a text
+Similarity
 
+import spacy
+
+nlp = spacy.load("en_core_web_md")  # make sure to use larger package!
+doc1 = nlp("I like salty fries and hamburgers.")
+doc2 = nlp("Fast food tastes very good.")
+
+# Similarity of two documents
+print(doc1, "<->", doc2, doc1.similarity(doc2))
+# Similarity of tokens and spans
+french_fries = doc1[2:4]
+burgers = doc1[5]
+print(french_fries, "<->", burgers, french_fries.similarity(burgers))
+
+### <a name='ex'/>3.5 spaCy examples
 
 ---
 
