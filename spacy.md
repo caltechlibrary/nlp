@@ -85,8 +85,7 @@ Here is a German example:
 ```python
 import spacy
 nlp = spacy.load("de_core_news_sm")
-doc = nlp("Inzwischen war seine Frau Minna am 25. Januar 1866 in Dresden gestorben.") # 'Meanwhile, his wife Minna, 
-                                                                          had died on January 25, 1866 in Dresden.'
+doc = nlp("Inzwischen war seine Frau Minna am 25. Januar 1866 in Dresden gestorben.") # 'Meanwhile, his wife Minna, had died on January 25, 1866 in Dresden.'
 for entity in doc.ents:
     print(entity.text, entity.label_)
 for token in doc:
