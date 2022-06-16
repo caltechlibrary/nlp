@@ -14,16 +14,11 @@ and production usage. Here is an example of spaCy code to extract 'entities' fro
 ```python
 import spacy                        # import the spaCy library
 nlp = spacy.load('en_core_web_sm')  # load the processing pipeline, `nlp`, based on the 'en_core_web_sm' model
-text = '''
-  Founded in 1891, Caltech is a world-renowned
-  science and engineering institute that marshals
-  some of the world’s brightest minds and most
-  innovative tools to address fundamental scientific
-  questions and pressing societal challenges. An
-  independent, privately supported institution
-  located in Pasadena, California, Caltech also
-  manages the Jet Propulsion Laboratory (JPL),
-  located 6 miles north of campus, for NASA.'''
+text = ("Founded in 1891, Caltech is an "
+        "independent, privately supported institution "
+        "located in Pasadena, California. Caltech also "
+        "manages the Jet Propulsion Laboratory (JPL), "
+        "located 6 miles north of campus, for NASA.")
 doc = nlp(text)                     # create an nlp object named `doc` from the text using the model
 for ent in doc.ents:                # read the 'entities', and their labels, from `doc`
   print(ent.text, ent.label_)
@@ -51,6 +46,22 @@ This will list the default pipeline components, in the order in which they are u
 | ner | Assign named entities |
 
 ##### (from: [https://spacy.io/usage/processing-pipelines#pipelines](https://spacy.io/usage/processing-pipelines#pipelines)
+
+If your result is a shorter list of pipeline components then you are likely not using the most recent version of spaCy.
+
+Here is some of the information that is available from the `nlp` object:
+
+```python
+import pandas as pd
+attribs = []
+for token in doc:
+  attribs.append([token.text, token.lemma_, token.pos_, token.tag_, token.dep_,
+            token.shape_, token.is_alpha, token.is_stop])
+df = pd.DataFrame(attribs, columns=['text', 'lemma', 'POS', 'tag', 'dependency', 'shape', 'alpha', 'stop'])
+df
+```
+
+##### (There is a full list of token attributes here: [https://spacy.io/api/token#attributes](https://spacy.io/api/token#attributes))
 
 ### <a name='model'/>3.2 Statistical modelling of text
 
