@@ -4,7 +4,7 @@
 - 3.2 [Processing pipelines](#pipe)
 - 3.3 [Text modelling](#model)
 - 3.4 [Word vectors and similarity](#vec)
-- 3.5 [spaCy examples](#ex)
+- 3.5 [scispaCy](#sci)
 
 ### <a name='spacy'/>3.1 Introduction to spacy
 
@@ -106,22 +106,30 @@ Here is what a word vector looks like:
 
 <img src='vector.png' alt='Word vector'/>
 
-Similarity
+The similarity of words, phrases and documents can be estimated using word vectors. Similarity is measured by the 'angle'
+between the vectors in the n-dimensional space.
 
+```python
 import spacy
 
-nlp = spacy.load("en_core_web_md")  # make sure to use larger package!
-doc1 = nlp("I like salty fries and hamburgers.")
-doc2 = nlp("Fast food tastes very good.")
+nlp = spacy.load("en_core_web_md")  # use md or lg packages
+doc1 = nlp("The Caltech Library has a new website.")
+doc2 = nlp("Access to online journals is essential.")
 
-Similarity of two documents
+# Similarity of two documents
 print(doc1, "<->", doc2, doc1.similarity(doc2))
-Similarity of tokens and spans
-french_fries = doc1[2:4]
-burgers = doc1[5]
-print(french_fries, "<->", burgers, french_fries.similarity(burgers))
 
-### <a name='ex'/>3.5 spaCy examples
+# Similarity of words and phrases
+website = doc1[6]
+online_journals = doc2[2:4]
+print(website, "<->", online_journals, website.similarity(online_journals))
+
+### <a name='sci'/>3.5 sciSpaCy
+
+As noted above, there are [many projects](https://spacy.io/universe) based on spaCy. [scispaCy](https://allenai.github.io/scispacy/)
+a package containing models for processing biomedical, scientific or clinical text, developed at the [Allen Institue for AI](https://allenai.org/) in Seattle. 
+
+
 
 ---
 
