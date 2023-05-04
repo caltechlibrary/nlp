@@ -1,7 +1,7 @@
 | A workshop inspired by | Sponsored by |
 | [<img src='TheCarpentries.svg' alt='Caltech Library' width='150'/>](https://carpentries.org) | [<img src='caltechlibrary-logo.png' alt='Caltech Library' width='150'/>](https://www.library.caltech.edu/) |
 
-#### June 13, 14 and 16, 2022
+#### May 5, 19 and 24, 2023
 
 ## Introduction
 
@@ -13,14 +13,11 @@ The workshop is limited to the processing of text, and does not include speech r
 or speech processing. Topics covered include the manipulation of text, word contexts and
 frequency distribution, parts of speech, named entities, and sentiment analysis.
 
-During COVID the workshop is taught online in three one-hour sessions. Ideally, the workshop
-would be taught in person, in three two-hour sessions, with time for exercises and discussion.
-
 ## Setup
 
 The workshop assumes use of a Jupyter Notebook to run code examples. JupyterLab, Jupyter Notebook, and Google Colab are all 
 good options. JupyterLab and Jupyter Notebook can be downloaded as part of the [Anaconda data science suite](https://anaconda.com).
-Google Colab in a cloud-based Jupyter Notebook implementation.
+Google Colab is a cloud-based Jupyter Notebook implementation.
 
 ### Google Colaboratory
 
