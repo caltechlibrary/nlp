@@ -108,6 +108,26 @@ for character in opening:
   print(opening.index(character))
 ```
 
+Python index notation can be used to identify the position of a character in a string. The general form is:
+
+```python
+string[start:end:skip]
+```
+
+Negative numbers refer to distance from the end of the string.
+
+Can you explain the following:
+
+```python
+text = 'I like to eat a banana for breakfast.'
+print(text[0])
+print(text[25])
+print(text[-1])
+print(text[3:20:2])
+print(text[-1::-1])
+print(text.split()[-1::-1])
+```
+
 ### <a name='lists'/>1.3 Lists
 
 A Python list is another iterable object. Like a string it is an ordered set of objects:
