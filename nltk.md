@@ -65,7 +65,7 @@ from urllib import request
 origin_byt = request.urlopen('https://www.gutenberg.org/cache/epub/2009/pg2009.txt').read()
 ```
 
-Print our the first 50 characters of origin_text:
+Print our the first 100 characters of origin_text:
 
 ```python
 print(origin_byt[:100])
