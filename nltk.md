@@ -147,7 +147,7 @@ This comprehension simply replicates the list:
 However, we can normalize the list like this:
 
 ```python
-title_words_norm = [word.lower() for word in title if len(word) > 2]
+title_words_norm = [word.lower() if len(word) < 3 else word.title() for word in title]
 ```
 
 ### <a name='preprocessing'/>2.2 Text preprocessing
@@ -195,7 +195,7 @@ The concordance method shows the context of words in the text:
 ```python
 text.concordance('species')
 text.concordance('human')
-text.similar('species')
+text.similar('species', num=10)
 text.dispersion_plot(['modification', 'change'])
 ```
 
