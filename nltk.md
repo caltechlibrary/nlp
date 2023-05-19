@@ -55,7 +55,7 @@ and the `read()` method to read the contents of the URL to a file:
 ```python
 url = 'https://www.gutenberg.org/cache/epub/2009/pg2009.txt'
 req = request.urlopen(url)
-origin_byt = request.urlopen(url).read()
+origin_byt = req.read()
 ```
 
 These code above can actually be collapsed into one:
